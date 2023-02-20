@@ -1,11 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital,wght@0,400;0,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Montserrat&family=Open+Sans&family=Poppins:ital,wght@0,400;0,600;1,700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    background-color: gray;
+    text-decoration: none;
+}
+
+body {
+    background: linear-gradient(68.15deg, #330039 30%, #450000 70%);
 }
 
 .center{
@@ -20,35 +23,62 @@
     padding: 20px 0;
 }
 
-.logo{
-    width: 50%;
-    padding-top: 2px;
-    align-items: left;
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
 }
 
-.menu{
-    padding-top: 30px;
-    width: 50%;
-    text-align: right;
+.line{
+    border-right: 4px solid rgba(255, 255, 255);
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    color: rgba(255, 255, 255);
+    font-size: 2em;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
-.menu a{
-    color: white;
-    text-decoration: none;
-    font-size: large;
-    font-weight: bold;
-    margin-right: 10px;
-    text-shadow: black;
+.typing-animation {
+    animation: blinkCursor 1000ms steps(144) infinite normal, 
+    typing 1s steps(15) 1s normal both;
 }
 
-.foto img{
-    border-top-right-radius: 10%;
-    border-top-left-radius: 60%;
-    border-bottom-left-radius: 0%;
-    border-bottom-right-radius: 30%;
-    position: absolute;
-    bottom: -70;
-    right: -50;
-    width: 430px;
-    height: 600px;
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 6.7em;
+    }
+}
+
+@keyframes blinkCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 22px;
+}
+
+.buttons-nav {
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgba(255, 255, 255);
+    cursor: pointer;
+}
+
+.conteudo {
+    border-top: 0.4px solid #FFFFFF;
 }
