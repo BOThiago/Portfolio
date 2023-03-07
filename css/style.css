@@ -40,8 +40,14 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    padding: 20px;
+    justify-content: space-between;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: 100px;
+    opacity: 80%;
 }
 
 .line {
@@ -53,6 +59,7 @@ body {
     white-space: nowrap;
     overflow: hidden;
     cursor: pointer;
+    text-shadow: #000 2px 5px 8px;
 }
 
 .typing-animation {
@@ -91,6 +98,8 @@ body {
     font-size: 16px;
     color: rgba(255, 255, 255);
     cursor: pointer;
+    font-size: 20px;
+    text-shadow: #000 px 3px 6px;
 }
 
 .conteudo {
@@ -109,7 +118,9 @@ body {
 .introducao-descritiva {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 22px;
+    margin-right: 180px;
+    margin-left: 60px;
 }
 
 .destaque {
@@ -154,6 +165,7 @@ body {
     font-size: 20px;
     text-shadow: -5px 3px 5px rgba(0, 0, 0);
     cursor: pointer;
+    margin-top: 20px;
 }
 
 .sobre-mim {
