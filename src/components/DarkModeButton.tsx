@@ -10,8 +10,8 @@ const DarkModeButton = ({
     };
 
     return (
-        <div className="">
-            <div className="w-12 sm:w-16 h-8 bg-gradient-to-r from-zinc-500 via-zinc-700 to-zinc-900 rounded-full relative shadow-sm shadow-gray-700">
+        <div>
+            <div className="w-12 sm:w-16 h-8 bg-gradient-to-r from-purple-900 via-purple-400 to-purple-900 rounded-full relative shadow-sm shadow-purple-900">
                 <div
                     onClick={changeTheme}
                     className={

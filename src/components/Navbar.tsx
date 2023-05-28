@@ -19,11 +19,11 @@ const Header = ({ setTheme, theme }: HeaderProps) => {
     ];
 
     return (
-        <div className="bg-zinc-100 shadow-md shadow-gray-300/20 text-zinc-900">
+        <div className="bg-zinc-100 shadow-md shadow-purple-500 text-zinc-900">
             <div className="flex justify-center py-2">
-                <div className="flex items-center gap-16">
+                <div className="flex items-center gap-8">
                     <a href="">
-                        <div className="border-black border-4 rounded-sm">
+                        <div className="border-black border-4 rounded-sm mr-4">
                             <h2 className="text-xl sm:text-3xl font-bold font-alt">
                                 <Typical
                                     steps={["BOThiago =)", 1000, "BOThiago =)"]}
@@ -33,18 +33,17 @@ const Header = ({ setTheme, theme }: HeaderProps) => {
                             </h2>
                         </div>
                     </a>
-                    <div className="flex-grow" />
-
-                    <div className="hidden md:flex gap-4">
+                    <div className="flex gap-16 xl:hidden mt-2">
                         {links.map((link) => (
                             <HoverLine {...link} key={link.href} />
                         ))}
                     </div>
-
-                    <div className="flex-grow" />
-
-                    <DarkModeButton setTheme={setTheme} theme={theme} />
-                    <HamburgerMenu />
+                    <div>
+                        <DarkModeButton setTheme={setTheme} theme={theme} />
+                    </div>
+                    <div>
+                        <HamburgerMenu />
+                    </div>
                 </div>
             </div>
         </div>
