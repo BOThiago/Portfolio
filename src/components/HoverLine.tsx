@@ -1,40 +1,20 @@
-import { useState } from "react";
-
 interface HoverLineProps {
     href: string;
     value: string;
 }
 
 const HoverLine = (props: HoverLineProps) => {
-    const [hover, setHover] = useState(false);
-
-    const hoverFunction = () => {
-        setHover(!hover);
-    };
-
-    const leaveFunction = () => {
-        setHover(!hover);
-    };
-
     return (
-        <a className="flex flex-col items-center justify-center w-22 overflow-hidden cursor-pointer">
-            <a
-                className="text-lg hover:font-semibold text-zinc-900"
-                onMouseOver={hoverFunction}
-                onMouseLeave={leaveFunction}
-                href={props.href}
-            >
-                {props.value}
+        <div className="w-22 flex cursor-pointer flex-col justify-center overflow-hidden text-base opacity-80 hover:mt-2 hover:pb-1 hover:opacity-100">
+            <a className="">
+                <a
+                    className="text-center font-semibold text-zinc-900 opacity-80 transition-all hover:border-b-4 hover:border-b-purple-800 hover:opacity-100"
+                    href={props.href}
+                >
+                    {props.value}
+                </a>
             </a>
-
-            <span
-                className={
-                    hover
-                        ? "h-[3px] w-[100%] bg-purple-900 ease-in-out duration-100"
-                        : "h-[3px] w-[100%] bg-purple-900 ease-in-out duration-100 -translate-x-[101%] "
-                }
-            ></span>
-        </a>
+        </div>
     );
 };
 

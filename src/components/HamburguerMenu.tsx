@@ -12,30 +12,30 @@ export const HamburgerMenu = () => {
     };
 
     return (
-        <div className="hamburguer">
+        <div className="">
             <div
-                className="flex flex-col gap-1 cursor-pointer"
+                className="box-content flex cursor-pointer flex-col md:hidden"
                 onClick={ToggleMode}
             >
                 <div
                     className={
                         active
-                            ? "rounded duration-100 ease-in w-6 h-1 bg-black rotate-45 translate-y-2"
-                            : "rounded w-6 h-1 bg-black ease-in duration-100"
+                            ? "w-89 h-1 translate-y-2 rotate-45 rounded bg-black duration-200 ease-in"
+                            : "h-1 w-6 rounded bg-black duration-200 ease-in"
                     }
                 ></div>
                 <div
                     className={
                         active
-                            ? "rounded ease-in w-6 h-1 bg-black rotate-45 duration-100 invisible"
-                            : "rounded w-6 h-1 bg-black ease-in duration-100"
+                            ? "invisible h-1 w-6 rotate-45 rounded bg-black duration-200 ease-in"
+                            : " h-1 w-6 rounded bg-black duration-200 ease-in"
                     }
                 ></div>
                 <div
                     className={
                         active
-                            ? "rounded  duration-100 ease-in w-6 h-1 bg-black -rotate-45 -translate-y-2"
-                            : "rounded w-6 h-1 bg-black ease-in duration-100"
+                            ? "h-1  w-6 -translate-y-2 -rotate-45 rounded bg-black duration-200 ease-in"
+                            : "h-1 w-6 rounded bg-black duration-200 ease-in"
                     }
                 ></div>
             </div>
@@ -43,15 +43,15 @@ export const HamburgerMenu = () => {
             <div
                 className={
                     active
-                        ? "block absolute right-10 bg-purple-900 w-[100%] md:w-96 h-64 p-16 ease-in-out duration-200 rounded-bl rounded-br mt-6"
-                        : "block absolute right-10 duration-100 ease-in-out -w-[80%] -h-28"
+                        ? "h-54 absolute mt-10 block w-[50%] rounded-md bg-zinc-800 p-8 duration-200 ease-in-out sm:w-96 md:hidden"
+                        : "-w-[80%] -h-28 absolute right-10 top-16 block duration-100 ease-in-out md:hidden"
                 }
             >
-                <ul className="flex justify-around flex-col items-center gap-8">
+                <ul className="flex flex-col items-center justify-around gap-4">
                     <li
                         className={
                             active
-                                ? "cursor-pointer text-zinc-200 font-medium hover:font-semibold text-xl"
+                                ? "cursor-pointer text-lg font-medium text-zinc-200 hover:border-b-purple-800 hover:font-semibold"
                                 : "hidden"
                         }
                     >
@@ -62,7 +62,7 @@ export const HamburgerMenu = () => {
                     <li
                         className={
                             active
-                                ? "cursor-pointer text-zinc-200 font-medium hover:font-semibold text-xl"
+                                ? "cursor-pointer text-lg font-medium text-zinc-200 hover:font-semibold"
                                 : "hidden"
                         }
                     >
@@ -73,7 +73,7 @@ export const HamburgerMenu = () => {
                     <li
                         className={
                             active
-                                ? "cursor-pointer text-zinc-200 font-medium hover:font-semibold text-xl"
+                                ? "cursor-pointer text-lg font-medium text-zinc-200 hover:font-semibold"
                                 : "hidden"
                         }
                     >
@@ -84,7 +84,7 @@ export const HamburgerMenu = () => {
                     <li
                         className={
                             active
-                                ? "cursor-pointer text-zinc-200 font-medium hover:font-semibold text-xl"
+                                ? "cursor-pointer text-lg font-medium text-zinc-200 hover:font-semibold"
                                 : "hidden"
                         }
                     >
@@ -95,7 +95,7 @@ export const HamburgerMenu = () => {
                     <li
                         className={
                             active
-                                ? "cursor-pointer text-zinc-200 font-medium hover:font-semibold text-xl"
+                                ? "cursor-pointer text-lg font-medium text-zinc-200 hover:font-semibold"
                                 : "hidden"
                         }
                     >
@@ -106,7 +106,7 @@ export const HamburgerMenu = () => {
                     <li
                         className={
                             active
-                                ? "cursor-pointer text-zinc-200 font-medium hover:font-semibold text-xl"
+                                ? "cursor-pointer text-lg font-medium text-zinc-200 hover:font-semibold"
                                 : "hidden"
                         }
                     >
