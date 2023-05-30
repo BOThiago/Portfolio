@@ -11,8 +11,8 @@ function Portfolio() {
             <div
                 className={
                     theme
-                        ? "bg-zinc-200 text-zinc-900 overflow-x-auto"
-                        : "bg-zinc-900 text-zinc-100 overflow-x-auto"
+                        ? "overflow-x-auto bg-zinc-200 text-zinc-900"
+                        : "overflow-x-auto bg-zinc-900 text-zinc-100"
                 }
             >
                 <Header setTheme={setTheme} theme={theme} />

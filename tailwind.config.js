@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
-export const content = ["./src/**/*.{js,jsx,ts,tsx}"];
+export const content = ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"];
 export const theme = {
+    purge: [],
+    darkMode: false,
     extend: {
         fontFamily: {
             sans: "Poppins",
@@ -21,5 +23,8 @@ export const theme = {
             "9xl": "156px",
         },
     },
+    content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+    variants: {},
+    plugins: [],
 };
 export const plugins = [];

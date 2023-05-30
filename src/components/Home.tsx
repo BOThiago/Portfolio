@@ -7,67 +7,84 @@ const Home = () => {
     return (
         <section
             id="home"
-            className="flex flex-col justify-center items-center w-screen h-screen min-h-[700px] gap-4 m-4"
+            className="flex h-screen min-h-[700px] flex-row items-center justify-center p-4"
         >
-            <img className="rounded-b-full" src={Me} alt="Eu :)" />
-            <div className="flex flex-col items-center text-center justify-center mb-4">
-                <p className="text-3xl sm:text-4xl md:text-6xl font-semibold ">
+            <div className="rounded-b-full">
+                <img
+                    className="cursor-pointer rounded-b-3xl hover:mb-2 hover:mt-1 hover:opacity-90"
+                    src={Me}
+                    alt="Eu :)"
+                />
+            </div>
+            <div className="mb-4 flex flex-col items-center justify-center text-center">
+                <p className="text-lg font-normal sm:text-2xl md:text-4xl ">
                     Olá! Meu nome é
                 </p>
-                <p className="text-[68px] sm:text-6xl md:text-4xl font-extrabold">
+                <p className="text-9xl font-extrabold sm:text-4xl md:text-6xl">
                     Thiago Barreto
                 </p>
 
-                <p className="text-center font-normal text-xl">
+                <p className="mt-4 text-center text-lg font-normal">
                     • Tenho 20 anos, atuo na área de análise e desenvolvimento
                     de sistemas.
                 </p>
-                <p className="text-center font-normal text-xl">
+                <p className="text-center text-lg font-normal">
                     • Desenvolvedor FullStack
                 </p>
-            </div>
-
-            <div className="flex justify-center gap-8">
-                <div className="">
-                    <a
-                        className="flex flex-col items-center "
-                        href="https://www.linkedin.com/in/thiago-barreto-de-oliveira/"
-                        rel="noreferrer"
-                        target="_blank"
-                    >
-                        <img
-                            className=" h-10 sm:h-16"
-                            src={Linkedin}
-                            alt="Linkedin"
-                        />
-                        <p className="font-light hover:font-normal">Linkedin</p>
-                    </a>
-                </div>
-                <div>
-                    <a
-                        className="flex flex-col items-center"
-                        href="https://github.com/BOThiago"
-                        rel="noreferrer"
-                        target="_blank"
-                    >
-                        <div className="bg-zinc-100 rounded-2xl">
+                <div className="flex flex-row justify-center gap-8 pt-16">
+                    <div className="">
+                        <a
+                            className="flex flex-col items-center"
+                            href="https://www.linkedin.com/in/thiago-barreto-de-oliveira/"
+                            rel="noreferrer"
+                            target="_blank"
+                        >
                             <img
-                                className="h-10 sm:h-16"
-                                src={Github}
-                                alt="Github"
+                                className=" h-10 hover:p-1 sm:h-16"
+                                src={Linkedin}
+                                alt="Linkedin"
                             />
-                        </div>
-                        <p className=" font-light hover:font-normal">Github</p>
-                    </a>
-                </div>
-                <div>
-                    <a
-                        href="mailto:thiago.barreto.oliveira22@gmail.com"
-                        className="flex flex-col items-center"
-                    >
-                        <img className="h-10 sm:h-16" src={Gmail} alt="Gmail" />
-                        <p className=" font-light hover:font-normal">E-mail</p>
-                    </a>
+                            <p className="font-light hover:font-normal">
+                                Linkedin
+                            </p>
+                        </a>
+                    </div>
+                    <div>
+                        <a
+                            className="flex flex-col items-center"
+                            href="https://github.com/BOThiago"
+                            rel="noreferrer"
+                            target="_blank"
+                        >
+                            <div className="">
+                                <div className="rounded-full">
+                                    <img
+                                        className="h-10 rounded-xl bg-zinc-100 hover:p-1 sm:h-16"
+                                        src={Github}
+                                        alt="Github"
+                                    />
+                                </div>
+                            </div>
+                            <p className="font-light hover:font-normal">
+                                Github
+                            </p>
+                        </a>
+                    </div>
+                    <div>
+                        <a
+                            href="mailto:thiago.barreto.oliveira22@gmail.com"
+                            className="flex flex-col items-center"
+                        >
+                            <img
+                                className="h-10 hover:p-1 sm:h-16"
+                                src={Gmail}
+                                alt="Gmail"
+                            />
+                            <p className=" font-light hover:font-normal">
+                                E-mail
+                            </p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>

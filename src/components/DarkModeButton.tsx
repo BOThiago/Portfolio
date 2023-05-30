@@ -11,15 +11,20 @@ const DarkModeButton = ({
 
     return (
         <div className="">
-            <div className="w-12 sm:w-16 h-8 bg-gradient-to-r from-zinc-500 via-zinc-700 to-zinc-900 rounded-full relative shadow-sm shadow-gray-700">
+            <div className="relative h-8 w-12 rounded-full bg-gradient-to-r from-purple-500 via-purple-700 to-purple-900 shadow-md shadow-gray-700 sm:w-16">
                 <div
                     onClick={changeTheme}
                     className={
                         theme
-                            ? "cursor-pointer w-8 h-8 bg-gray-200 rounded-full ease-in-out duration-300 shadow-sm shadow-black"
-                            : "cursor-pointer w-8 h-8 bg-gray-200 rounded-full translate-x-[24px] sm:translate-x-[32px] ease-in-out duration-300 shadow-sm shadow-black"
+                            ? "h-8 w-8 cursor-pointer rounded-full bg-gray-200 shadow-sm shadow-black duration-300 ease-in-out"
+                            : "h-8 w-8 translate-x-[24px] cursor-pointer rounded-full bg-gray-200 shadow-sm shadow-black duration-300 ease-in-out sm:translate-x-[32px]"
                     }
-                ></div>
+                >
+                    {" "}
+                    <span className="material-symbols-outlined absolute select-none rounded-full p-1 shadow-md">
+                        dark_mode
+                    </span>
+                </div>
             </div>
         </div>
     );
