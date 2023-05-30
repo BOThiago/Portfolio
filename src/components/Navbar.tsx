@@ -33,15 +33,12 @@ const Header = ({ setTheme, theme }: HeaderProps) => {
                             </h2>
                         </div>
                     </a>
-
                     <div className="hidden gap-8 md:flex">
                         {links.map((link) => (
                             <HoverLine {...link} key={link.href} />
                         ))}
                     </div>
-
                     <DarkModeButton setTheme={setTheme} theme={theme} />
-
                     <HamburgerMenu />
                 </div>
             </div>

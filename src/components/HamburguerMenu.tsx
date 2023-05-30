@@ -7,6 +7,10 @@ export const HamburgerMenu = () => {
         setMode(!active);
     };
 
+    const handleLinkClick = () => {
+        setMode(false);
+    };
+
     return (
         <div className="">
             <div
@@ -51,7 +55,9 @@ export const HamburgerMenu = () => {
                                 : "hidden"
                         }
                     >
-                        <a href="#home">Home</a>
+                        <a href="#home" onClick={handleLinkClick}>
+                            Home
+                        </a>
                     </li>
                     <li
                         className={
@@ -60,7 +66,9 @@ export const HamburgerMenu = () => {
                                 : "hidden"
                         }
                     >
-                        <a href="#about">Sobre</a>
+                        <a href="#about" onClick={handleLinkClick}>
+                            Sobre
+                        </a>
                     </li>
                     <li
                         className={
@@ -69,7 +77,9 @@ export const HamburgerMenu = () => {
                                 : "hidden"
                         }
                     >
-                        <a href="#carreira">Carreira</a>
+                        <a href="#carreira" onClick={handleLinkClick}>
+                            Carreira
+                        </a>
                     </li>
                     <li
                         className={
@@ -78,7 +88,9 @@ export const HamburgerMenu = () => {
                                 : "hidden"
                         }
                     >
-                        <a href="#projects">Projetos</a>
+                        <a href="#projects" onClick={handleLinkClick}>
+                            Projetos
+                        </a>
                     </li>
                     <li
                         className={
@@ -87,7 +99,9 @@ export const HamburgerMenu = () => {
                                 : "hidden"
                         }
                     >
-                        <a href="#redesSociais">Redes Sociais</a>
+                        <a href="#redesSociais" onClick={handleLinkClick}>
+                            Redes Sociais
+                        </a>
                     </li>
                     <li
                         className={
@@ -96,7 +110,9 @@ export const HamburgerMenu = () => {
                                 : "hidden"
                         }
                     >
-                        <a href="#contato">Contato</a>
+                        <a href="#contato" onClick={handleLinkClick}>
+                            Contato
+                        </a>
                     </li>
                 </ul>
             </div>

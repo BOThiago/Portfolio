@@ -17,8 +17,7 @@ function Portfolio() {
             >
                 <Header setTheme={setTheme} theme={theme} />
                 <Home />
-                {/* <Home />
-                <About />
+                {/* <About />
                 <Projects /> */}
             </div>
         </div>
