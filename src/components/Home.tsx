@@ -7,31 +7,31 @@ const Home = () => {
     return (
         <section
             id="home"
-            className="flex h-screen min-h-[700px] flex-row items-center justify-center p-4"
+            className="flex h-screen min-h-[700px] flex-row items-center justify-center p-4 sm:h-screen sm:flex-col md:flex-col lg:flex-row xl:flex-row 2xl:gap-32"
         >
             <div className="rounded-b-full">
                 <img
-                    className="cursor-pointer rounded-b-3xl hover:mb-2 hover:mt-1 hover:opacity-90"
+                    className="cursor-pointer rounded-b-3xl hover:mb-2 hover:mt-1 hover:opacity-90 sm:w-96 lg:w-auto"
                     src={Me}
                     alt="Eu :)"
                 />
             </div>
             <div className="mb-4 flex flex-col items-center justify-center text-center">
-                <p className="text-lg font-normal sm:text-2xl md:text-4xl ">
+                <p className="text-lg font-normal sm:text-xl md:text-2xl 2xl:text-4xl">
                     Olá! Meu nome é
                 </p>
-                <p className="text-9xl font-extrabold sm:text-4xl md:text-6xl">
+                <p className="text-9xl font-extrabold sm:text-4xl md:text-5xl lg:text-4xl 2xl:text-6xl">
                     Thiago Barreto
                 </p>
-
-                <p className="mt-4 text-center text-lg font-normal">
-                    • Tenho 20 anos, atuo na área de análise e desenvolvimento
-                    de sistemas.
-                </p>
-                <p className="text-center text-lg font-normal">
-                    • Desenvolvedor FullStack
-                </p>
-                <div className="flex flex-row justify-center gap-8 pt-16">
+                <div className="flex flex-col gap-2">
+                    <p className="mt-4 text-center text-lg font-normal sm:text-sm md:text-base 2xl:text-xl">
+                        • Analista e desenvolvedor de sistemas.
+                    </p>
+                    <p className="text-center text-lg font-normal sm:text-sm 2xl:text-xl">
+                        • Desenvolvedor FullStack
+                    </p>
+                </div>
+                <div className="flex flex-row justify-center gap-8 pt-16 sm:text-sm md:text-base 2xl:gap-14 2xl:text-xl">
                     <div className="">
                         <a
                             className="flex flex-col items-center"
@@ -59,7 +59,7 @@ const Home = () => {
                             <div className="">
                                 <div className="rounded-full">
                                     <img
-                                        className="h-10 rounded-xl bg-zinc-100 hover:p-1 sm:h-16"
+                                        className="h-10 rounded-xl hover:p-1 sm:h-16"
                                         src={Github}
                                         alt="Github"
                                     />

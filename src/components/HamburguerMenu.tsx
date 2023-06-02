@@ -10,27 +10,27 @@ export const HamburgerMenu = () => {
     return (
         <div className="">
             <div
-                className="box-content flex cursor-pointer flex-col md:hidden"
+                className="box-content flex cursor-pointer flex-col gap-1 lg:hidden"
                 onClick={ToggleMode}
             >
                 <div
                     className={
                         active
-                            ? "w-89 h-1 translate-y-2 rotate-45 rounded bg-black duration-200 ease-in"
+                            ? "w-89 h-1 translate-y-2 rotate-45 rounded bg-black shadow-xl duration-200 ease-in"
                             : "h-1 w-6 rounded bg-black duration-200 ease-in"
                     }
                 ></div>
                 <div
                     className={
                         active
-                            ? "invisible h-1 w-6 rotate-45 rounded bg-black duration-200 ease-in"
+                            ? "w- invisible h-1 rotate-45 rounded bg-black shadow-xl duration-200 ease-in"
                             : " h-1 w-6 rounded bg-black duration-200 ease-in"
                     }
                 ></div>
                 <div
                     className={
                         active
-                            ? "h-1  w-6 -translate-y-2 -rotate-45 rounded bg-black duration-200 ease-in"
+                            ? "h-1  w-6 -translate-y-2 -rotate-45 rounded bg-black shadow-xl duration-200 ease-in"
                             : "h-1 w-6 rounded bg-black duration-200 ease-in"
                     }
                 ></div>
@@ -39,8 +39,8 @@ export const HamburgerMenu = () => {
             <div
                 className={
                     active
-                        ? "h-54 absolute mt-10 block w-[50%] rounded-md bg-zinc-800 p-8 duration-200 ease-in-out sm:w-96 md:hidden"
-                        : "-w-[80%] -h-28 absolute right-10 top-16 block duration-100 ease-in-out md:hidden"
+                        ? "absolute flex justify-center rounded-lg border-2 bg-purple-900 p-8 opacity-95 duration-200 ease-linear sm:right-8 sm:mt-10 sm:w-11/12 sm:ease-in md:right-12 lg:hidden"
+                        : "-w-[100%] -h-28 absolute right-10 top-16 block duration-100 ease-in-out lg:hidden"
                 }
             >
                 <ul className="flex flex-col items-center justify-around gap-4">
@@ -51,7 +51,9 @@ export const HamburgerMenu = () => {
                                 : "hidden"
                         }
                     >
-                        <a href="#home">Home</a>
+                        <a href="#home" onClick={ToggleMode}>
+                            Home
+                        </a>
                     </li>
                     <li
                         className={
@@ -60,7 +62,9 @@ export const HamburgerMenu = () => {
                                 : "hidden"
                         }
                     >
-                        <a href="#about">Sobre</a>
+                        <a href="#about" onClick={ToggleMode}>
+                            Sobre
+                        </a>
                     </li>
                     <li
                         className={
@@ -69,7 +73,9 @@ export const HamburgerMenu = () => {
                                 : "hidden"
                         }
                     >
-                        <a href="#carreira">Carreira</a>
+                        <a href="#carreira" onClick={ToggleMode}>
+                            Carreira
+                        </a>
                     </li>
                     <li
                         className={
@@ -78,7 +84,9 @@ export const HamburgerMenu = () => {
                                 : "hidden"
                         }
                     >
-                        <a href="#projects">Projetos</a>
+                        <a href="#projects" onClick={ToggleMode}>
+                            Projetos
+                        </a>
                     </li>
                     <li
                         className={
@@ -87,7 +95,9 @@ export const HamburgerMenu = () => {
                                 : "hidden"
                         }
                     >
-                        <a href="#redesSociais">Redes Sociais</a>
+                        <a href="#redesSociais" onClick={ToggleMode}>
+                            Redes Sociais
+                        </a>
                     </li>
                     <li
                         className={
@@ -96,7 +106,9 @@ export const HamburgerMenu = () => {
                                 : "hidden"
                         }
                     >
-                        <a href="#contato">Contato</a>
+                        <a href="#contato" onClick={ToggleMode}>
+                            Contato
+                        </a>
                     </li>
                 </ul>
             </div>
