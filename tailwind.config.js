@@ -1,6 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 export const content = ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"];
 export const theme = {
+    screens: {
+        "2xl": "1536px",
+        xl: "1280px",
+        lg: "1024px",
+        md: "768px",
+        sm: "640px",
+        xxs: "540px",
+        "2xs": "400px",
+        "3xs": "340px",
+    },
     purge: [],
     darkMode: false,
     extend: {
