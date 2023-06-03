@@ -19,9 +19,15 @@ const Header = ({ setTheme, theme }: HeaderProps) => {
     ];
 
     return (
-        <div className="flex justify-around bg-zinc-100 text-zinc-900 shadow-md shadow-gray-300/20 md:justify-around">
-            <div className="py-2 sm:py-4 lg:py-4">
-                <div className="flex items-center gap-24 sm:gap-60 md:justify-between md:gap-96 lg:gap-8 xl:justify-around xl:gap-16">
+        <div
+            className={
+                theme
+                    ? "flex justify-around bg-zinc-100 text-zinc-900 shadow-md shadow-gray-300/20 md:justify-around"
+                    : "flex justify-around bg-gray-300 text-zinc-900 shadow-md shadow-gray-300/20 md:justify-around"
+            }
+        >
+            <div className="py-2 3xs:py-5 2xs:py-5 xxs:py-5 sm:py-4 lg:py-4 2xl:py-6">
+                <div className="flex items-center gap-24 3xs:gap-16 sm:gap-60 md:justify-between md:gap-96 lg:gap-8 xl:justify-around xl:gap-16 2xl:gap-24">
                     <div>
                         <a href="">
                             <div className="">

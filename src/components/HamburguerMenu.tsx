@@ -39,7 +39,7 @@ export const HamburgerMenu = () => {
             <div
                 className={
                     active
-                        ? "absolute flex justify-center rounded-lg border-2 bg-purple-900 p-8 opacity-95 duration-200 ease-linear sm:right-8 sm:mt-10 sm:w-11/12 sm:ease-in md:right-12 lg:hidden"
+                        ? "absolute flex justify-center rounded-lg border-2 bg-gray-700 p-8 opacity-95 duration-200 ease-linear 3xs:right-4 3xs:mt-10 3xs:w-11/12 2xs:right-5 2xs:mt-10 2xs:w-11/12 xxs:right-8 xxs:mt-10 xxs:w-11/12 sm:right-8 sm:mt-10 sm:w-11/12 sm:ease-in md:right-12 lg:hidden"
                         : "-w-[100%] -h-28 absolute right-10 top-16 block duration-100 ease-in-out lg:hidden"
                 }
             >
