@@ -7,6 +7,10 @@ export const HamburgerMenu = () => {
         setMode(!active);
     };
 
+    const handleLinkClick = () => {
+        setMode(false);
+    };
+
     return (
         <div className="">
             <div

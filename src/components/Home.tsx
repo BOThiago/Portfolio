@@ -96,8 +96,11 @@ const Home: FC<HomeProps> = ({ theme }) => {
                         </a>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+            <section id="about">
+                <div className="flex h-screen w-screen items-center justify-around flex-row-reverse"></div>
+            </section>
+        </>
     );
 };
 
