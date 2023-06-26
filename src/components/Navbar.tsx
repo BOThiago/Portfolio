@@ -31,7 +31,7 @@ const Header = ({ setTheme, theme }: HeaderProps) => {
                     <div>
                         <a href="">
                             <div className="">
-                                <h2 className="font-alt text-xl font-semibold opacity-80 hover:opacity-100 sm:text-3xl lg:text-2xl xl:text-2xl">
+                                <h2 className="font-alt text-xl font-semibold opacity-80 hover:scale-105 hover:opacity-100 sm:text-3xl lg:text-2xl xl:text-2xl">
                                     <Typical
                                         steps={[
                                             "BOThiago =)",
@@ -46,7 +46,7 @@ const Header = ({ setTheme, theme }: HeaderProps) => {
                         </a>
                     </div>
 
-                    <div className="lg:text-normal hidden gap-8 lg:flex">
+                    <div className="lg:text-normal hidden h-12 justify-center gap-8 lg:flex">
                         {links.map((link) => (
                             <HoverLine {...link} key={link.href} />
                         ))}

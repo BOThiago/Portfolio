@@ -8,7 +8,7 @@ export const theme = {
         md: "768px",
         sm: "640px",
         xxs: "540px",
-        "2xs": "400px",
+        "2xs": "390px",
         "3xs": "340px",
     },
     purge: [],
@@ -19,6 +19,9 @@ export const theme = {
             alt: "Ubuntu",
         },
         fontSize: {
+            "3xs": "10px",
+            "2xs": "13px",
+            xs: "14px",
             sm: "16px",
             base: "18px",
             lg: "20px",

@@ -2,9 +2,10 @@ import { useState } from "react";
 import Header from "../components/Navbar";
 import Home from "../components/Home";
 import "../index.css";
+import About from "../components/About";
 
 function Portfolio() {
-    const [theme, setTheme] = useState(false);
+    const [theme, setTheme] = useState(true);
 
     return (
         <div className="scroll-smooth">
@@ -17,6 +18,7 @@ function Portfolio() {
             >
                 <Header setTheme={setTheme} theme={theme} />
                 <Home theme={theme} />
+                <About />
                 {/* <Home />
                 <About />
                 <Projects /> */}
